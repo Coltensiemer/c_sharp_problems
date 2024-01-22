@@ -12,3 +12,4 @@
 /Users/coltensiemer/Documents/git-hub/c_sharp_problems/obj/Debug/net8.0/C_Sharp_Problems.pdb
 /Users/coltensiemer/Documents/git-hub/c_sharp_problems/obj/Debug/net8.0/C_Sharp_Problems.genruntimeconfig.cache
 /Users/coltensiemer/Documents/git-hub/c_sharp_problems/obj/Debug/net8.0/ref/C_Sharp_Problems.dll
+/Users/coltensiemer/Documents/git-hub/c_sharp_problems/obj/Debug/net8.0/C_Sharp_Problems.sourcelink.json
