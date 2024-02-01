@@ -1,7 +1,5 @@
 ﻿
 // initialize variables - graded assignments 
-using System.Data.Common;
-using System.Runtime.InteropServices;
 
 // int currentAssignments = 5;
 
@@ -55,6 +53,8 @@ using System.Runtime.InteropServices;
 // Console.WriteLine(roll3);
 
 
+
+using System.Globalization;
 
 int firstValue = 500;
 int secondValue = 600;
@@ -180,7 +180,7 @@ int largerValue = Math.Max(firstValue, secondValue);
 // 	if (found) Console.WriteLine("Set contains 42");
 // 	} 
 
-    
+
 // Console.WriteLine($"Total: {total}");
 
 // }
@@ -191,58 +191,58 @@ int largerValue = Math.Max(firstValue, secondValue);
 // SKU = Stock Keeping Unit. 
 // SKU value format: <product #>-<2-letter color code>-<size code>
 // SKU = Stock Keeping Unit
-string sku = "01-MN-L";
+// string sku = "01-MN-L";
 
-string[] product = sku.Split('-');
+// string[] product = sku.Split('-');
 
-string type = "";
-string color = "";
-string size = "";
+// string type = "";
+// string color = "";
+// string size = "";
 
-switch (product[0])
-{
-    case "01":
-        type = "Sweat shirt";
-        break;
-    case "02":
-        type = "T-Shirt";
-        break;
-    case "03":
-        type = "Sweat pants";
-        break;
-    default:
-        type = "Other";
-        break;
-}
+// switch (product[0])
+// {
+//     case "01":
+//         type = "Sweat shirt";
+//         break;
+//     case "02":
+//         type = "T-Shirt";
+//         break;
+//     case "03":
+//         type = "Sweat pants";
+//         break;
+//     default:
+//         type = "Other";
+//         break;
+// }
 
-switch (product[1])
-{
-    case "BL":
-        color = "Black";
-        break;
-    case "MN":
-        color = "Maroon";
-        break;
-    default:
-        color = "White";
-        break;
-}
+// switch (product[1])
+// {
+//     case "BL":
+//         color = "Black";
+//         break;
+//     case "MN":
+//         color = "Maroon";
+//         break;
+//     default:
+//         color = "White";
+//         break;
+// }
 
-switch (product[2])
-{
-    case "S":
-        size = "Small";
-        break;
-    case "M":
-        size = "Medium";
-        break;
-    case "L":
-        size = "Large";
-        break;
-    default:
-        size = "One Size Fits All";
-        break;
-}
+// switch (product[2])
+// {
+//     case "S":
+//         size = "Small";
+//         break;
+//     case "M":
+//         size = "Medium";
+//         break;
+//     case "L":
+//         size = "Large";
+//         break;
+//     default:
+//         size = "One Size Fits All";
+//         break;
+// }
 
 // Console.WriteLine($"Product: {size} {color} {type}");
 
@@ -251,8 +251,209 @@ switch (product[2])
 ///
 
 
-for (int i =10; i>= 0; i--) { 
-Console.WriteLine(i); 
-if (i == 7) break; 
+// for (int i =10; i>= 0; i--) { 
+// Console.WriteLine(i); 
+// if (i == 7) break; 
 
+// }
+
+//////////
+
+// for (int i = 0; i >= 0; i++ ) { 
+// if(i % 3 == 0){ 
+// 	Console.WriteLine(i+ "- Fizz");
+// }
+// else if( i % 5 == 0) { 
+// 	Console.WriteLine(i + "- Buzz"); 
+// }
+// else Console.WriteLine(i); 
+
+// if (i == 100) break; 
+// }; 
+
+////////////
+///
+
+
+// Random attack = new(); 
+// int monsterHealth = 10; 
+// int heroHealth = 10; 
+
+
+// do{ 
+
+// int heroAttack = attack.Next(1,10); 
+// 	monsterHealth -= heroAttack; 
+
+// 	Console.WriteLine($"Monster was damaged and lost {heroAttack} health and now has {monsterHealth} health");
+
+// if (monsterHealth < 0) break;
+
+// int monsterAttack = attack.Next(1,10); 
+// 	heroHealth -= monsterAttack; 
+// 	Console.WriteLine($"Hero was damaged and lost {monsterAttack} health and now has {heroHealth} health");
+
+// }while(monsterHealth > 0 && heroHealth > 0);
+// Console.WriteLine(heroHealth > monsterHealth ? "Hero Wins" : "Monster Wins"); 
+
+
+//////////
+///
+
+// Random number = new Random(); 
+// int input = number.Next(1,11); 
+
+// do {
+// 	if (input >= 5 && input <=10) { 
+// 		Console.WriteLine("vaild"); 
+// 	}
+// 	else { 
+// 		Console.WriteLine("Retype the input:", input); 
+// 	}
+
+
+// } while(input < 5 && input > 10); 
+
+//////////////////
+
+// string permission = "Admin|Manager";
+// int level = 55;
+
+
+// if (permission.Contains("Admin"))
+// {
+
+//     if (level > 50)
+//     {
+//         Console.WriteLine($"Welcome, Super Admin User");
+
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Welcome, Admin");
+
+//     }
+// }
+// else if (permission.Contains("Manager"))
+// {
+//     if (level >= 20)
+//     {
+//         Console.WriteLine($"Contact Admin");
+
+//     }
+//     else
+//     {
+//         Console.WriteLine($"You do not have the privilege");
+
+//     }
+
+// }
+// else { 
+//     Console.WriteLine($"You do not have the privilege");
+    
+// }
+
+//////////////////////////////////////
+
+
+// decimal number = 3.2m;
+// int result = Convert.ToInt16(number); 
+
+
+////////////////////
+
+// string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+
+// // foreach (var value in values) { 
+// //     decimal number; 
+// //     if (decimal.TryParse(value, out number)) { 
+// //         Console.WriteLine($"number: {number}");
+        
+// //     }
+// //     else { 
+// //         Console.WriteLine($"Message: {value}");
+        
+// //     }
+// // }
+
+// for (int i = 0; i < values.Length; i++) { 
+//         decimal number; 
+//       if (decimal.TryParse(values[i], out number)) { 
+//         Console.WriteLine($"number: {number}");
+        
+//      }
+//       else { 
+//          Console.WriteLine($"Message: {i}");
+        
+//      }
+// }
+
+
+// int[] number = {1,2,3,4,5,6,7}; 
+// System.Console.WriteLine();
+
+
+// int value = number.Length;  
+
+// // Array.Clear(number, 1,2); 
+// // foreach(var num in number) { 
+// //     Console.WriteLine($"{num}");
+    
+// // }
+
+// Array.Resize(ref number, 15); 
+// foreach (var num in number)
+// {
+//     Console.WriteLine($"{num}: after resize gained {(number.Length - value)}");
+// }
+
+
+// Array.Resize(ref number, 2); 
+// foreach (var num in number)
+// {
+//     Console.WriteLine($"{num}: after resize");
+// }
+
+
+//////////////////
+
+// string pangram = "The quick brown fox jumps over the lazy dog";
+
+// // creates an array that is split by a space
+// string[] words = pangram.Split(' '); 
+
+// // creates a new array with the same length as words
+// string[] message = new string[words.Length]; 
+
+// // loops over the words
+// for (int i = 0; i < words.Length; i++)
+// {
+// //copies letters to a unicode instance, allows it be reserse and placed in the array message
+//  char[] letters = words[i].ToCharArray(); 
+//  Array.Reverse(letters);
+//  message[i] = new string(letters);    
+// }
+
+// // joins the arrays into one string with spaces
+//  string result = String.Join(" ", message); 
+//  Console.WriteLine($"{result}");
+
+
+ ////////////
+  
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+
+string[] wordArray = orderStream.Split(',');
+Array.Sort(wordArray); 
+
+foreach (var item in wordArray)
+{
+    Console.WriteLine($"{item}"); 
+    
 }
+
+Console.WriteLine($"{wordArray}");
+
+
+
